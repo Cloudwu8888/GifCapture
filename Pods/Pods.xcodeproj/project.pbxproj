@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		08555B4080E074123CFABBB3E99AD6B3 /* Pods-GifCapture-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCapture-frameworks.sh"; sourceTree = "<group>"; };
 		0D356CD3BCCF1447A210D026D34E904A /* Pods-GifCaptureTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCaptureTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		13EA165BF307F9CAE569CD5586AA32FD /* Pods_GifCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCapture.framework; path = "Pods-GifCapture.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EA165BF307F9CAE569CD5586AA32FD /* Pods_GifCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A64625E60E0F3AFB0BDD3636DF8188 /* NSGIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSGIF.m; path = NSGIF/NSGIF.m; sourceTree = "<group>"; };
 		1EF10B27ACC2150F45DFC691CAC8EF6B /* Pods-GifCaptureTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCaptureTests-umbrella.h"; sourceTree = "<group>"; };
 		22CB80644C3BEB2862B1499CDE64EA77 /* NSGIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSGIF.h; path = NSGIF/NSGIF.h; sourceTree = "<group>"; };
@@ -45,31 +45,31 @@
 		2AC74D07C78D6F5A6C57F8114ED9C38A /* NSGIF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF-umbrella.h"; sourceTree = "<group>"; };
 		2D552CE0190CD2E36FE18739F2604951 /* NSGIF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSGIF-dummy.m"; sourceTree = "<group>"; };
 		313B5C47E168F8F92EB7C92CB526668B /* Pods-GifCapture-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCapture-resources.sh"; sourceTree = "<group>"; };
-		32C77B9AF3D68C35060324FA6435A4A4 /* Pods-GifCaptureUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GifCaptureUITests.modulemap"; sourceTree = "<group>"; };
+		32C77B9AF3D68C35060324FA6435A4A4 /* Pods-GifCaptureUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GifCaptureUITests.modulemap"; sourceTree = "<group>"; };
 		347CC51E9D956591FCA2EFAC7352E19F /* NSGIF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSGIF.xcconfig; sourceTree = "<group>"; };
-		349B2D3E20CC1A3DDBA5CBF6177537CE /* NSGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSGIF.framework; path = NSGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		439CFE74339CE9F37A67EA52900D5083 /* Pods_GifCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCaptureTests.framework; path = "Pods-GifCaptureTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43C37D3FBDFF8CFE9DC94C914B8283D8 /* NSGIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NSGIF.modulemap; sourceTree = "<group>"; };
+		349B2D3E20CC1A3DDBA5CBF6177537CE /* NSGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		439CFE74339CE9F37A67EA52900D5083 /* Pods_GifCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifCaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C37D3FBDFF8CFE9DC94C914B8283D8 /* NSGIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NSGIF.modulemap; sourceTree = "<group>"; };
 		45FF17E123A055BED33A006FD9B0A976 /* Pods-GifCaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4BCBD8E175DFCD8C7E377D952418B49D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C9C59B4F37CECED151940FA52A84FE5 /* Pods-GifCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCapture.release.xcconfig"; sourceTree = "<group>"; };
 		53C7980875533DE6D182BDE85FAE798C /* Pods-GifCaptureTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCaptureTests-dummy.m"; sourceTree = "<group>"; };
 		5424AD547BC0C0464D7BBD089544C604 /* Pods-GifCaptureTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCaptureTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A6BFCAF4499FEDB8F5A0CA2495DB91C /* Pods-GifCaptureTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GifCaptureTests.modulemap"; sourceTree = "<group>"; };
+		5A6BFCAF4499FEDB8F5A0CA2495DB91C /* Pods-GifCaptureTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GifCaptureTests.modulemap"; sourceTree = "<group>"; };
 		63D0975AA65AFAE4A311A516CD768D80 /* Pods-GifCaptureUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCaptureUITests-dummy.m"; sourceTree = "<group>"; };
 		6ECFECC215712794A6A3EA82A9CE6DD5 /* NSGIF-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF-prefix.pch"; sourceTree = "<group>"; };
-		73E32809D578DAFCA6709C3E142AF8DA /* Pods-GifCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GifCapture.modulemap"; sourceTree = "<group>"; };
+		73E32809D578DAFCA6709C3E142AF8DA /* Pods-GifCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GifCapture.modulemap"; sourceTree = "<group>"; };
 		7D01719E5AC1E98B59EA8B6F71CE6492 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FDFFF866C153DBE8728D32C0555177 /* Pods-GifCapture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCapture-umbrella.h"; sourceTree = "<group>"; };
 		87EFDF7DE07F54521BC83CF9439467EB /* Pods-GifCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCapture.debug.xcconfig"; sourceTree = "<group>"; };
 		936E509A10C95CE4CD9F0CC686485C58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C6C3547C127E04D0EBBCF3D8F69CFDE /* Pods-GifCapture-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCapture-acknowledgements.plist"; sourceTree = "<group>"; };
 		A398D5354923A71C5E77EFF21925502D /* Pods-GifCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABB8383F0D1EE1E3F661CBC130F2A66A /* Pods-GifCaptureUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCaptureUITests-umbrella.h"; sourceTree = "<group>"; };
 		B948602C52B61C5B035990EDBE7A24B8 /* Pods-GifCaptureUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCaptureUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA1C2EE19A99CCE3ECBBB5C226519F3A /* Pods-GifCapture-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCapture-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BBCE1F8B8FC2C6E679204CE804CEAEE2 /* Pods_GifCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCaptureUITests.framework; path = "Pods-GifCaptureUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCE1F8B8FC2C6E679204CE804CEAEE2 /* Pods_GifCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifCaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5DD9CA45837444577714C4D47D4E0B /* Pods-GifCaptureUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCaptureUITests-frameworks.sh"; sourceTree = "<group>"; };
 		C2B8EB11882959B394C4EE7C95B60A8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31DBD1CF8A347E46743AE6FF98712F9 /* Pods-GifCapture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCapture-dummy.m"; sourceTree = "<group>"; };
@@ -168,7 +168,6 @@
 				18A64625E60E0F3AFB0BDD3636DF8188 /* NSGIF.m */,
 				5DD6A07685C8AB6A2C8A64E5DC370514 /* Support Files */,
 			);
-			name = NSGIF;
 			path = NSGIF;
 			sourceTree = "<group>";
 		};
