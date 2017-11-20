@@ -8,6 +8,8 @@
 
 import Cocoa
 import AVFoundation
+import AppCenterAnalytics
+import AppCenterCrashes
 
 protocol CameraManDelegate: class {
   func cameraMan(man: CameraMan, didChange state: State)
@@ -20,6 +22,7 @@ class CameraMan: NSObject {
   // MARK: - Public
 
   func record() {
+    MSAnalytics.trackEvent("Record2")
     let tempVideoUrl = URL(fileURLWithPath: NSTemporaryDirectory())
       .appendingPathComponent(UUID().uuidString)
       .appendingPathExtension("mov")
@@ -29,14 +32,18 @@ class CameraMan: NSObject {
   }
 
   func resume() {
+    MSCrashes.generateTestCrash()
     output.resumeRecording()
+    MSAnalytics.trackEvent("Resume1")
   }
 
   func pause() {
+    MSAnalytics.trackEvent("pause1")
     output.pauseRecording()
   }
 
   func stop() {
+    MSAnalytics.trackEvent("Stop1")
     output.stopRecording()
     session.stopRunning()
   }

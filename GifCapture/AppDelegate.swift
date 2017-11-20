@@ -7,6 +7,10 @@
 //
 
 import Cocoa
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+import AppCenterPush
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,6 +19,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   @IBOutlet weak var stopMenuItem: NSMenuItem!
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
+    MSPush.setDelegate(self)
+    MSAppCenter.start("{8d632d83-2cf0-44b9-ac9b-a284df98accd}", withServices: [MSAnalytics.self, MSCrashes.self, MSPush.self])
     let window = NSApplication.shared().windows.first!
 
     // Window
@@ -29,7 +35,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     // Notification
     NSUserNotificationCenter.default.delegate = self
+    
   }
+    func push(_ push: MSPush!, didReceive pushNotification: MSPushNotification!) {
+        let alert: NSAlert = NSAlert()
+        alert.messageText = "Sorry about that!"
+        alert.informativeText = "Do you want to send an anonymous crash report so we can fix the issue?"
+        alert.addButton(withTitle: "Always send")
+        alert.addButton(withTitle: "Send")
+        alert.addButton(withTitle: "Don't send")
+        alert.alertStyle = NSWarningAlertStyle
+        
+        switch (alert.runModal()) {
+        case NSAlertFirstButtonReturn:
+            MSCrashes.notify(with: .always)
+            break;
+        case NSAlertSecondButtonReturn:
+            MSCrashes.notify(with: .send)
+            break;
+        case NSAlertThirdButtonReturn:
+            MSCrashes.notify(with: .dontSend)
+            break;
+        default:
+            break;
+        }
+    }
 
   // MARK: - MenuItem
 

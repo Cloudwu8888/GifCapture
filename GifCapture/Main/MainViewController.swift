@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import AppCenterAnalytics
 
 class MainViewController: NSViewController {
 
@@ -34,7 +35,7 @@ class MainViewController: NSViewController {
 
   func setup() {
     stopButton.isEnabled = false
-
+    MSAnalytics.trackEvent("Set up", withProperties: ["Category" : "Music", "FileName" : "favorite.avi"])
     loadingIndicator = LoadingIndicator()
     view.addSubview(loadingIndicator)
     Utils.constrain(constraints: [
@@ -67,10 +68,12 @@ class MainViewController: NSViewController {
     } else if case .resume = state {
       cameraMan?.pause()
     }
+    MSAnalytics.trackEvent("Record")
   }
 
   @IBAction func stopButtonTouched(_ sender: NSButton) {
     cameraMan?.stop()
+    MSAnalytics.trackEvent("Stop Record")
   }
 
   // MARK: - Frame
@@ -152,11 +155,13 @@ class MainViewController: NSViewController {
   func toggleRecordButton(enabled: Bool) {
     recordButton.isEnabled = enabled
     (NSApplication.shared().delegate as! AppDelegate).recordMenuItem.isEnabled = enabled
+    MSAnalytics.trackEvent("Record1")
   }
 
   func toggleStopButton(enabled: Bool) {
     stopButton.isEnabled = enabled
     (NSApplication.shared().delegate as! AppDelegate).stopMenuItem.isEnabled = enabled
+    MSAnalytics.trackEvent("Stop Record1")
   }
 
   @IBAction func recordMenuItemTouched(_ sender: NSMenuItem) {
