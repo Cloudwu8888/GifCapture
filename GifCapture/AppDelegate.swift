@@ -13,14 +13,31 @@ import AppCenterCrashes
 import AppCenterPush
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, MSPushDelegate ,MSCrashesDelegate{
 
   @IBOutlet weak var recordMenuItem: NSMenuItem!
   @IBOutlet weak var stopMenuItem: NSMenuItem!
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
+    MSCrashes.setDelegate(self)
     MSPush.setDelegate(self)
-    MSAppCenter.start("{8d632d83-2cf0-44b9-ac9b-a284df98accd}", withServices: [MSAnalytics.self, MSCrashes.self, MSPush.self])
+    MSAppCenter.start("8d632d83-2cf0-44b9-ac9b-a284df98accd", withServices:[
+        MSAnalytics.self,
+        MSCrashes.self
+        ])
+    MSAnalytics.trackEvent("Video clicked")
+    MSAnalytics.trackEvent("didMove")
+    MSAnalytics.trackEvent("mouseUp")
+    MSAnalytics.trackEvent("keyDown")
+    MSAnalytics.trackEvent("launch");
+    MSAppCenter.setLogLevel(MSLogLevel.verbose)
+    var installId = MSAppCenter.installId()
+    
+    var customProperties = MSCustomProperties()
+    customProperties.setString("blue", forKey: "color")
+    customProperties.setNumber(10, forKey: "score")
+    customProperties.clearProperty(forKey: "score")
+    MSAppCenter.setCustomProperties(customProperties)
     let window = NSApplication.shared().windows.first!
 
     // Window
